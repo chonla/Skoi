@@ -1,5 +1,6 @@
 Skoi = function() {
 	var o = {
+		version : '0.1',
 		mapS2T : {
 			'ุ': 'ู',
 			'ภ': 'พ',
