@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?<?=$rt?>"></script>
+	<script type="text/javascript" src="skoi.js"></script>
+	<script type="text/javascript">
+	var skoi = new Skoi();
+	translate = function() {
+		$('#thai').val($('#skoi').val().skoi_to_thai());
+	};
+	$(function() {
+		translate();
+		$('#translate').click(translate);
+	});
+	</script>
+ </head>
+
+ <body>
+  ข้อความสก๊อย <textarea id="skoi" rows="4" cols="50">นุ๊วม่รุ๊วว่จั๊ฆเหฏกษรณ์ก่)๋ฮงเเป๊.แฃร์ข๊งนุ๊ซ์วฏฆสั๊ญแ)้ฯภิ๋ฒพ์ม่ต๊กิ๊ จ่ธั๊ฒหั๊ญพั๊ซ์กพริ๊ๆเฤิร์กรั๊ฆนุ๊ซ์วฤึ๊เป๊ว์า พริ๊ญั๊ย์กจ่เฬ่รกั๊ผนุ๊ซ์วยุ๊ซ์วฤึ๊ป่๊ว์าวค๊ ต่ว๊เพร์ฒนิ๊ธั๊มหั๊ญนุ๊ง์วเห็ฯอ่รั๊ญเย๊ร์อะเย๊ิอ์ะมั๊ขเร่รรค๊ พริ๊ฃิ๊ฆเมิ๊ลนุ๊ซว์ม่คร๊ นุ๊ส์วรั๊ขพริ๊ๆธุ๊ฅฅ๊ณมั๊ฆฆ๊ ร่นุ๊ง์วข่ผคุ๊ฯพริ๊มั๊ขค๊ นุ๊วดั่ญษึ๊ฆสษฅั๊ฒด๋าม่จั๊ขพํ๊ว์กพริ๊เแร๊ซ์ะค๊ นุ๊ฆยั๊กจ่บั๊ว์กอิ๊ฏญั๊.น๊ค๊ ว่ดภษร์ม่กริ๊นุ๊ซ์ว ล้อเล่น</textarea><br>
+  แปล <textarea id="thai" rows="4" cols="50"></textarea><br>
+	<input type="button" value="แปล" id="translate">
+ </body>
+</html>
