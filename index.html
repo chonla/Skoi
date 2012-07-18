@@ -25,11 +25,32 @@
 		h2 {
 			text-align:center;
 		}
+		h3 {
+			font-size:small;
+			text-align:left;
+		}
 		.wrapper {
 			display:block;
-			width:450px;
+			width:750px;
+			height:auto;
+			margin:20px auto;
+		}
+		.left {
+			display:block;
+			width:470px;
 			height:auto;
 			margin:0px auto;
+			float:left;
+			border-right:1px solid #eee;
+			padding-right:20px;
+		}
+		.right {
+			display:block;
+			width:260px;
+			height:auto;
+			margin:0px auto;
+			float:right;
+			font-size:small;
 		}
 		.border {
 			display:block;
@@ -47,6 +68,7 @@
 			border-radius:4px;
 			border:1px solid #333;
 			overflow:auto;
+			font-size:medium;
 		}
 		.footer {
 			font-size:small;
@@ -56,23 +78,49 @@
 		.footer a {
 			color:#000;
 		}
+		.right a {
+			color:#336699;
+			font-size:small;
+		}
 	</style>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-33482815-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
  </head>
 
  <body>
 	<div class="wrapper">
-		<h2>สก๊อย</h2>
-		<div class="border">
-			<textarea id="skoi" class="textbox">พริ๊ๆภิมตงนิ๊น๊ค๊ นุ๊วจระแปรหั๊พริ๊ๆอั๊นเองคร๊</textarea>
+		<div class="left">
+			<h2>สก๊อย</h2>
+			<div class="border">
+				<textarea id="skoi" class="textbox">พริ๊ๆภิมตงนิ๊น๊ค๊ นุ๊วจระแปรหั๊พริ๊ๆอั๊นเองคร๊</textarea>
+			</div>
+			<h2>แปลว่า</h2>
+			<div class="border">
+				<textarea id="thai" class="textbox"></textarea>
+			</div>
+			<br>
+			<hr width="100%" noshade color="#cccccc" size="1">
+			<div class="footer">
+				Skoi Translator based on <a href="https://github.com/chonla/Skoi">Skoi.js</a> v.<span id="version"></span> by <a href="https://github.com/chonla">chonla</a>
+			</div>
 		</div>
-		<h2>แปลว่า</h2>
-		<div class="border">
-			<textarea id="thai" class="textbox"></textarea>
-		</div>
-		<br>
-		<hr width="100%" noshade color="#cccccc" size="1">
-		<div class="footer">
-			Skoi Translator based on <a href="https://github.com/chonla/Skoi">Skoi.js</a> v.<span id="version"></span> by <a href="https://github.com/chonla">chonla</a>
+		<div class="right">
+			<h3>รู้จักสก๊อย</h3>
+			<a href="http://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%81%E0%B9%8A%E0%B8%AD%E0%B8%A2">วิกิพีเดีย</a><br>
+			<a href="http://www.facebook.com/sowhateiei">ษม่ค่ล์มนิ๋ญฒสก๊อย</a> (เฟซบุ๊ค)
+			<h3>Skoi.js</h3>
+			ตัว Skoi.js ไม่สามารถแปลให้เป็นภาษาไทยปกติถูกต้องทั้งหมด แต่ช่วยทำให้การอ่านภาษาสก๊อย "<b>ง่ายขึ้น</b>"
 		</div>
   </div>
  </body>
