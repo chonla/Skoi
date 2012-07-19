@@ -95,7 +95,7 @@ Skoi = function() {
 										buffer += s[i];
 										console.log("buffer-1="+buffer);
 									} else {
-										buffer = buffer.substr(0, buffer.length - 1);
+										buffer = buffer.substr(0, buffer.length - 1 - lpatch.length);
 										console.log("buffer-2="+buffer);
 										out.push(buffer);
 										buffer = l2.substr(l2.length - 1, 1) + lpatch + s[i];
