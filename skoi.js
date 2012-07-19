@@ -1,6 +1,6 @@
 Skoi = function() {
 	var o = {
-		version : '0.1.2',
+		version : '0.1.3',
 		mapS2T : {
 			'ุ': 'ู',
 			'ภ': 'พ',
@@ -77,7 +77,7 @@ Skoi = function() {
 										console.log('upper or lower vowel found->L2='+l2);
 									} else {
 										l2 = buffer.substr(buffer.length - 2, 2);
-										console.log('NO upper or lower vowel found');
+										console.log('NO upper or lower vowel found->L2='+l2);
 									}
 									var l21 = l2.substr(0, 1);
 									if (this.charMap.tone.test(l21)) { // tone
@@ -95,7 +95,7 @@ Skoi = function() {
 										buffer += s[i];
 										console.log("buffer-1="+buffer);
 									} else {
-										buffer = buffer.substring(0, buffer.length - l2.length);
+										buffer = buffer.substr(0, buffer.length - 1);
 										console.log("buffer-2="+buffer);
 										out.push(buffer);
 										buffer = l2.substr(l2.length - 1, 1) + lpatch + s[i];
